@@ -1,0 +1,13 @@
+#ITWBauernhof{
+    background: green;
+
+}
+.CchooseTW a {
+    margin: 2.5%;
+    font-size: 26px;
+    width: 500px;
+    text-underline-style: none;
+}
+#ITWBauernhof:hover {
+    background: greenyellow;
+}
