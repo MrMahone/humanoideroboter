@@ -10,19 +10,20 @@
     <script src="./script/jquery.min.js"></script>		<!-- lib required from touch.js -->
     <script src="./script/robotutils.js"></script> 		<!-- handles connection to naoqi api -->
     <script src="./script/touch.js"></script>			<!-- inlcudes functions to handle touch events and sync with choregraphe -->
-    <script src="./script/game.js"></script>  <!-- handles gameplay -->
+    <script language="JavaScript" type="text/javascript" src="./script/game.js"></script>  <!-- handles gameplay -->
 
     <title>Themenwelt Bauernhof</title>
 </head>
-<body>
+<body onload="onLoad()">
     <section class="CchooseAnimal">
-        <img class="CimgAnimal" src="./img/kuh.jpg" alt="./img/error.jpg">
+
+        <img id="IimgLeft" class="CimgAnimal" src="./img/kuh.jpg" alt="./img/error.jpg" onclick="onLeftImgClick">
         <article>
-            <button onclick="onButtonClick()"/>
+            <button id="test1" onclick="onButtonClick()"/>
             <img class="CimgSpeaker" src="./img/lautsprecher.jpg" alt="./img/error.jpg">
         </article>
 
-        <img class="CimgAnimal" src="./img/huhn.jpg" alt="./img/error.jpg">
+        <img id="IimgRight" class="CimgAnimal" src="./img/huhn.jpg" alt="./img/error.jpg" onclick="onRightImgClick">
     </section>
 </body>
 </html>
