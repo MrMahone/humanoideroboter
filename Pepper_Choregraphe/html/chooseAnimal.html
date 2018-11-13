@@ -10,20 +10,22 @@
     <script src="./script/jquery.min.js"></script>		<!-- lib required from touch.js -->
     <script src="./script/robotutils.js"></script> 		<!-- handles connection to naoqi api -->
     <script src="./script/touch.js"></script>			<!-- inlcudes functions to handle touch events and sync with choregraphe -->
-    <script language="JavaScript" type="text/javascript" src="./script/game.js"></script>  <!-- handles gameplay -->
+    <script language="JavaScript" type="text/javascript" src="script/game.js"></script>  <!-- handles gameplay -->
 
     <title>Themenwelt Bauernhof</title>
 </head>
 <body onload="onLoad()">
+<audio id="IAudio"></audio>
+
     <section class="CchooseAnimal">
 
-        <img id="IimgLeft" class="CimgAnimal" src="./img/kuh.jpg" alt="./img/error.jpg" onclick="onLeftImgClick">
-        <article>
-            <button id="test1" onclick="onButtonClick()"/>
+        <img id="IimgLeft" class="CimgAnimal" src="./img/error.jpg" alt="./img/error.jpg" onclick="onImgClick('l');">
+        <article id="ISpeaker">
+            <button onclick="onButtonSpeakerClick()"/>
             <img class="CimgSpeaker" src="./img/lautsprecher.jpg" alt="./img/error.jpg">
         </article>
 
-        <img id="IimgRight" class="CimgAnimal" src="./img/huhn.jpg" alt="./img/error.jpg" onclick="onRightImgClick">
+        <img id="IimgRight" class="CimgAnimal" alt="./img/error.jpg" onclick="onImgClick('r');">
     </section>
 </body>
 </html>
