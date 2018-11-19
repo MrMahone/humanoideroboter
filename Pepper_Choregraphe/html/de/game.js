@@ -13,10 +13,12 @@
 
 var idGame; //id für Auswahl der Spielreihe
 var Games = [];
-var leftImg = document.getElementById('IimgLeft');
-var rightImg = document.getElementById('IimgRight');
-var speaker = document.getElementById('ISpeaker');
-var infos = document.getElementById('Iinfos');
+var leftImg;
+var rightImg;
+var speaker;
+var infos;
+var prev;
+var arrow;
 
 function onButtonSpeakerClick(){
     var audio = document.getElementById('IAudio');
@@ -28,13 +30,38 @@ function onButtonSpeakerClick(){
 function setImgs(){
     leftImg.src = Games[idGame].GameParts[Games[idGame].solvedParts].leftImg;
     rightImg.src = Games[idGame].GameParts[Games[idGame].solvedParts].rightImg;
+    if(Games[idGame].solvedParts > 0){
+        var text = '';
+        if(Games[idGame].GameParts[(Games[idGame].solvedParts - 1)].correctImg === 'l') {
+            text = Games[idGame].GameParts[(Games[idGame].solvedParts - 1)].leftImg;
+        } else {
+            text = Games[idGame].GameParts[(Games[idGame].solvedParts - 1)].rightImg;
+        }
+        //cut ".jpg" away
+        text = text.slice(0,text.length-4);
+        var char = '';
+        var count = -1;
+        while(char !== '/'){
+            char = text.slice(-((++count)+1),-count);
+        }
+        prev.innerHTML = text.slice(-count);
+        arrow.style.visibility = 'visible';
+    }else {
+        prev.innerHTML = '';
+        arrow.style.visibility = 'hidden';
+    }
 }
 function onLoad(){
     leftImg = document.getElementById('IimgLeft');
     rightImg = document.getElementById('IimgRight');
     speaker = document.getElementById('ISpeaker');
     infos = document.getElementById('Iinfos');
+    prev = document.getElementById('IPrev');
+    arrow = document.getElementById('IImgArrow');
+
     speaker.style.visibility = 'hidden';
+    arrow.style.visibility = 'hidden';
+
     setGames();
     idGame = 0;
     showInfo('Von welchem Tier stammt dieses Geräusch?',2,function () {
@@ -48,7 +75,7 @@ function selectNewGame(){
     // idGame remains 0
     Games.shift();
     if(Games.length > 0){
-        showInfo('Neue Runde', 1, function () {
+        showInfo('Neue Runde', 2, function () {
             //there is still a Game to select
             speaker.style.visibility = 'visible';
             setImgs();
@@ -90,7 +117,7 @@ function showInfo(text, duration, toDo) {
 
 function appendGame(leftImgs, rightImgs, correctImgs, sound){
     var gameParts = [];
-    for(var i=0; i<leftImgs.length; i++){
+    for(var i=0; i< leftImgs.length; i++){
         gameParts.push({
             leftImg: leftImgs[i], //String
             rightImg: rightImgs[i], //String
@@ -108,14 +135,19 @@ function appendGame(leftImgs, rightImgs, correctImgs, sound){
 function setGames() {
 
     //Game no. 1: Kuh
-    appendGame(['./img/kuh.jpg','./img/Brot.jpg','./img/Käse.jpg'], //Linke Bilder
-        ['./img/ratte.jpg','./img/Milch.jpg','./img/Wurst.jpg'],   // Rechte Bilder
+    appendGame(['./img/Kuh.jpg','./img/Brot.jpg','./img/Kaese.jpg'], //Linke Bilder
+        ['./img/Ratte.jpg','./img/Milch.jpg','./img/Wurst.jpg'],   // Rechte Bilder
         ['l','r','l'],                                               //richtiges Bild
         './Sounds/cow.mp3');                                        //Sound (1. Bild)
-    //Game no. 2: huhn
-    appendGame(['./img/huhn.jpg','./img/Ei.jpg','./img/Apfel.jpg'],
-        ['./img/Esel.jpg','./img/Mehl.jpg','./img/Spiegelei.jpg'],
-        ['l','l','r'],
-        './Sounds/chicken.mp3');
+    //Game no. 2: Huhn
+    appendGame(['./img/Huhn.jpg','./img/Ei.jpg','./img/Apfel.jpg'], //Linke Bilder
+        ['./img/Esel.jpg','./img/Mehl.jpg','./img/Spiegelei.jpg'],   // Rechte Bilder
+        ['l','l','r'],                                               //richtiges Bild
+        './Sounds/chicken.mp3');                                        //Sound (1. Bild)
+    //Game no. 3: Schaf
+    appendGame(['./img/Schaf.jpg','./img/Kartoffeln.jpg','./img/Kuchen.jpg'], //Linke Bilder
+        ['./img/Labrador.jpg','./img/Wolle.jpg','./img/Muetze.jpg'],   // Rechte Bilder
+        ['l','r','r'],                                               //richtiges Bild
+        './Sounds/sheep.mp3');                                        //Sound (1. Bild)
 }
 

@@ -12,13 +12,25 @@
     background: greenyellow;
 }
 
-#ISpeaker img{
+.CimgMiddle{
     width: 120px;
-    height: 80px;
+    height: 100px;
     background-color: lightgray;
 }
-#ISpeaker button{
+#IPrev, #IImgArrow {
+    position: absolute;
+    width: 140px;
+
+    font-size: 36px;
+    text-align: center;
+}
+#IImgArrow{
+    margin-top: 50px;
+    height: 160px;
+}
+#ISpeaker{
     margin-top: 120px;
+
 }
 .CimgAnimal {
     width: 480px;
@@ -33,7 +45,7 @@
 }
 #Iinfos {
 
-    border: 2px solid black;
+    border: 1px solid black;
     border-left: 10px solid darkblue;
     background-color: lightblue;
 
