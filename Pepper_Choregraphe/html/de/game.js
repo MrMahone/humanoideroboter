@@ -1,5 +1,3 @@
-//let session = QiSession();
-
 
 /*   The Game "Object":
 
@@ -13,19 +11,17 @@
            ]
  */
 
-let idGame; //id für Auswahl der Spielreihe
-let Games = [];
-let leftImg = document.getElementById('IimgLeft');
-let rightImg = document.getElementById('IimgRight');
-let speaker = document.getElementById('ISpeaker');
+var idGame; //id für Auswahl der Spielreihe
+var Games = [];
+var leftImg = document.getElementById('IimgLeft');
+var rightImg = document.getElementById('IimgRight');
+var speaker = document.getElementById('ISpeaker');
+var infos = document.getElementById('Iinfos');
 
 function onButtonSpeakerClick(){
-    let audio = document.getElementById('IAudio');
+    var audio = document.getElementById('IAudio');
     audio.src = Games[idGame].sounds;
     audio.play();
-    //let speechService = session.service('ALAudioPlayerProxy');
-    //speechService.loadFile('../Sounds/cow.mp3');
-    //speechService.play();
 }
 
 
@@ -34,49 +30,67 @@ function setImgs(){
     rightImg.src = Games[idGame].GameParts[Games[idGame].solvedParts].rightImg;
 }
 function onLoad(){
-
     leftImg = document.getElementById('IimgLeft');
     rightImg = document.getElementById('IimgRight');
     speaker = document.getElementById('ISpeaker');
+    infos = document.getElementById('Iinfos');
+    speaker.style.visibility = 'hidden';
     setGames();
     idGame = 0;
-    setImgs();
+    showInfo('Von welchem Tier stammt dieses Geräusch?',2,function () {
+        speaker.style.visibility = 'visible';
+        setImgs();
+        onButtonSpeakerClick();
+    });
 }
 function selectNewGame(){
     // now the first Game is played always. random could be implemented
     // idGame remains 0
-
-
     Games.shift();
     if(Games.length > 0){
-        alert('Neue Runde!');
-        //there is still a Game to select
-        speaker.style.visibility = 'visible';
-        setImgs();
+        showInfo('Neue Runde', 1, function () {
+            //there is still a Game to select
+            speaker.style.visibility = 'visible';
+            setImgs();
+            onButtonSpeakerClick();
+        });
     } else {
         //Game is over
-        alert('Game Over!');
+        showInfo('Danke für die Hilfe!', 5, function () {
+            document.location = './index.html';
+        })
     }
 }
 function onImgClick(pos){
     if (Games[idGame].GameParts[Games[idGame].solvedParts].correctImg === pos){
         //correct Image has been selected
-        alert('CORRECT');
-        if(++Games[idGame].solvedParts === Games[idGame].GameParts.length){
-            //all parts solved
-            selectNewGame();
-        } else {
-            //next Part
-            speaker.style.visibility = 'hidden';
-            setImgs();
-        }
+        showInfo('Richtig!\n Toll gemacht!', 2, function () {
+            if (++Games[idGame].solvedParts === Games[idGame].GameParts.length) {
+                //all parts solved
+                selectNewGame();
+            } else {
+                //next Part
+                speaker.style.visibility = 'hidden';
+                setImgs();
+            }
+        });
     }
+}
+function showInfo(text, duration, toDo) {
+    infos.innerHTML = text;
+    infos.style.visibility = 'visible';
+    setTimeout(function(){
+
+        infos.style.visibility = 'hidden';
+        toDo();
+    }, duration*1000);
+
 }
 
 
 function appendGame(leftImgs, rightImgs, correctImgs, sound){
-    let gameParts = [];
-    for(let i=0; i<leftImgs.length; i++){
+    var gameParts = [];
+    for(var i=0; i<leftImgs.length; i++){
         gameParts.push({
             leftImg: leftImgs[i], //String
             rightImg: rightImgs[i], //String
@@ -94,13 +108,13 @@ function appendGame(leftImgs, rightImgs, correctImgs, sound){
 function setGames() {
 
     //Game no. 1: Kuh
-    appendGame(['./img/kuh.jpg','./img/Brot.jpg','./img/1Käse.jpg'], //Linke Bilder
-        ['./img/ratte.jpg','./img/Milch.jpg','./img/1Wurst.jpg'],   // Rechte Bilder
-        ['l','r','l'],                                              //richtiges Bild
+    appendGame(['./img/kuh.jpg','./img/Brot.jpg','./img/Käse.jpg'], //Linke Bilder
+        ['./img/ratte.jpg','./img/Milch.jpg','./img/Wurst.jpg'],   // Rechte Bilder
+        ['l','r','l'],                                               //richtiges Bild
         './Sounds/cow.mp3');                                        //Sound (1. Bild)
     //Game no. 2: huhn
     appendGame(['./img/huhn.jpg','./img/Ei.jpg','./img/Apfel.jpg'],
-        ['./img/Esel.jpg','./img/Mehl.jpg','./img/1Spiegelei.jpg'],
+        ['./img/Esel.jpg','./img/Mehl.jpg','./img/Spiegelei.jpg'],
         ['l','l','r'],
         './Sounds/chicken.mp3');
 }

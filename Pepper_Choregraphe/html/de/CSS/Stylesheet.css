@@ -1,0 +1,56 @@
+#ITWBauernhof{
+    background: green;
+
+}
+.CchooseTW a {
+    margin: 2.5%;
+    font-size: 26px;
+    width: 500px;
+    text-underline-style: none;
+}
+#ITWBauernhof:hover {
+    background: greenyellow;
+}
+
+#ISpeaker img{
+    width: 120px;
+    height: 80px;
+    background-color: lightgray;
+}
+#ISpeaker button{
+    margin-top: 120px;
+}
+.CimgAnimal {
+    width: 480px;
+    height: 350px;
+}
+
+.CchooseAnimal > *{
+    align-items: center;
+    float: left;
+    background-color: white;
+    border: none;
+}
+#Iinfos {
+
+    border: 2px solid black;
+    border-left: 10px solid darkblue;
+    background-color: lightblue;
+
+    position: absolute;
+    align-content: center;
+    margin-left: 120px;
+    margin-top: 50px;
+    width: 800px;
+    min-height: 150px;
+    max-height: 300px;
+
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+    vertical-align: center;
+
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}

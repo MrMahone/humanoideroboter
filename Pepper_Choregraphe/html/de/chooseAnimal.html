@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1280, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="./CSS/Stylesheet.css"/>
+    <!-- 1280 * 800 pixel -->
 
-
-    <!--<script src="script/jquery.min.js"></script>		<!-- lib required from touch.js -->
-    <!--<script src="script/robotutils.js"></script> 		<!-- handles connection to naoqi api -->
-    <!--<script src="script/touch.js"></script>			<!-- inlcudes functions to handle touch events and sync with choregraphe -->
+    <script src="./jquery.min.js"></script>		<!-- lib required from touch.js -->
+    <script src="./robotutils.js"></script> 		<!-- handles connection to naoqi api -->
+    <script src="./touch.js"></script>			<!-- inlcudes functions to handle touch events and sync with choregraphe -->
     <script src="game.js"></script>  <!-- handles gameplay -->
 
     <title>Themenwelt Bauernhof</title>
@@ -17,14 +17,24 @@
 <audio id="IAudio"></audio>
 
     <section class="CchooseAnimal">
-
-        <img id="IimgLeft" class="CimgAnimal" src="./img/error.jpg" alt="./img/error.jpg" onclick="onImgClick('l');">
+        <button onclick="onImgClick('l');">
+            <img id="IimgLeft" class="CimgAnimal" alt="" >
+        </button>
         <article id="ISpeaker">
-            <button onclick="onButtonSpeakerClick()"/>
-            <img class="CimgSpeaker" src="./img/lautsprecher.jpg" alt="./img/error.jpg">
+            <button onclick="onButtonSpeakerClick()">
+                <img id="IImgMiddle" class="CimgSpeaker" src="./img/lautsprecher.jpg">
+            </button>
         </article>
-
-        <img id="IimgRight" class="CimgAnimal"  src="./img/error.jpg" alt="./img/error.jpg" onclick="onImgClick('r');">
+        <button onclick="onImgClick('r');">
+            <img id="IimgRight" class="CimgAnimal" alt="">
+        </button>
     </section>
+
+
+<section id="Iinfos">
+
+       TEST
+
+</section>
 </body>
 </html>
