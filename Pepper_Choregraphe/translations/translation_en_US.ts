@@ -8,5 +8,11 @@
             <comment>Text</comment>
             <translation type="vanished">Hello</translation>
         </message>
+        <message>
+            <location filename="behavior_1/behavior.xar" line="0"/>
+            <source>Nuttööööööö</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Nuttööööööö</translation>
+        </message>
     </context>
 </TS>
