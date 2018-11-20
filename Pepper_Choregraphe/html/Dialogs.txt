@@ -20,7 +20,7 @@ Das hat Spaß gemacht. Möchtest du noch eine Runde mit mir spielen?
 Auswahl Ja: Toll, weiter geht's!
 Auswahl Nein: Schade, dann bis zum nächsten Mal!
 
-Hm, welches Tier macht denn dieses Geräusch? (KIKERIKI!) (ist kikeriki nicht der hahn, der keine eier legt?!?!?!?!?!!!!11!eins)
+welches Tier macht denn dieses Geräusch? (KIKERIKI!) (ist kikeriki nicht der hahn, der keine eier legt?!?!?!?!?!!!!11!eins)
 Auswahl Huhn: Ja! Super! Weiter geht's. 
 Auswahl Esel: Nein, höre nochmal genauer hin. (KIKERIKI!) 
 Mehrmals falsch: Welches Tier schreit morgens? - Ah, ich glaube es ist der Hahn. 
@@ -41,7 +41,7 @@ Auswahl Nein: Schade, dann bis zum nächsten Mal!
 
 An welches Tier erinnert dich dieses Geräusch? - (MÄÄÄÄHHHHH!)
 Auswahl Schaf: Ja genau, es ist das Schaf!
-Auswahl Schnecke: Ich habe noch nie eine Schnecke soetwas machen gehört. 
+Auswahl Schnecke: Ich habe noch nie ein Hund soetwas machen gehört. 
 Mehrmals falsch: Hm, ich weiß gar nicht was die Schnecke für Geräusche macht. Es war wohl eher das Schaf.
 
 Hm, und wovon hat das Schaf im Sommer viel zu viel?
@@ -50,7 +50,7 @@ Auswahl XXXXX: Ne, also das kann ich mir nicht vorstellen. Nochmal!
 Mehrmals falsch: Das Schaf hat ganz kuschelige, warme Wolle. 
 
 Und was kann ich mit der ganzen Wolle machen, damit ich im Winter nicht friere?
-Auswahl Socken: Ja genau, meine Oma hat mir immer Wollsocken gestrickt. 
+Auswahl Socken: Ja genau, meine Oma hat mir immer Mützen gestrickt. 
 Auswahl XXXXXX: Das geht doch nicht, probier es noch einmal.
 Mehrmals falsch: Nein, die dicken Socken sind aus der weichen Wolle gestrickt.
 

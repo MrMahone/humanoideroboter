@@ -23,7 +23,6 @@ var infos;
 var prev;
 var arrow;
 
-
 function onButtonSpeakerClick(){
     var audio = document.getElementById('IAudio');
     audio.src = Games[idGame].sounds;
@@ -77,21 +76,19 @@ function onLoad(){
     infos = document.getElementById('Iinfos');
     prev = document.getElementById('IPrev');
     arrow = document.getElementById('IImgArrow');
-    counter = 1;
+    counter = 0;
     idGame = 0;
 
     speaker.style.visibility = 'hidden';
     arrow.style.visibility = 'hidden';
 
     setGames();
-    setTimeout(function () {
-        showInfo('Von welchem Tier stammt dieses Geräusch?', 3, function () {
-            speaker.style.visibility = 'visible';
-            setImgs();
-            onButtonSpeakerClick();
-        });
-    }, 8000);
-
+    //renameButtons();
+    showInfo('Von welchem Tier stammt dieses Geräusch?', 2, function () {
+        speaker.style.visibility = 'visible';
+        setImgs();
+        onButtonSpeakerClick();
+    });
 }
 function selectNewGame(){
     // now the first Game is played always. random could be implemented
@@ -114,7 +111,7 @@ function selectNewGame(){
 function onImgClick(pos){
     if (Games[idGame].GameParts[Games[idGame].solvedParts].correctImg === pos){
         //correct Image has been selected
-        showInfo('Richtig!\n Toll gemacht!', 7, function () {
+        showInfo('Richtig!\n Toll gemacht!', 2, function () {
             if (++Games[idGame].solvedParts === Games[idGame].GameParts.length) {
                 //all parts solved
                 selectNewGame();
@@ -126,9 +123,7 @@ function onImgClick(pos){
         });
     } else {
         //false image has been selected
-        showInfo('Das war es glaube ich nicht.', 4 ,function () {
-
-        });
+        showInfo('Ich glaube, das war ein anderes Tier.', 3 ,);
     }
 }
 function showInfo(text, duration, toDo) {
@@ -145,6 +140,7 @@ function showInfo(text, duration, toDo) {
     }, duration*1000);
 
 }
+
 
 function appendGame(leftImgs, rightImgs, correctImgs, sound){
     var gameParts = [];

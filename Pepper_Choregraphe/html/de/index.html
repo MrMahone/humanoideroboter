@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=1280, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="./CSS/Stylesheet.css"/>
 
-    <!-- Libary zur Verbindung JS <-> NaoQi -->
-    <script src="../libs/qimessaging/2/qimessaging.js"></script>
+    <script src="./jquery.min.js"></script>		<!-- lib required from touch.js -->
+    <script src="./robotutils.js"></script> 		<!-- handles connection to naoqi api -->
+    <script src="./touch.js"></script>			<!-- inlcudes functions to handle touch events and sync with choregraphe -->
 
     <title>Themenwelt</title>
 </head>
@@ -14,8 +15,9 @@
 <button id="chooseanimal">
 <section class="CchooseTW">
 		<h1>Willkommen in der Themenwelt!</h1>
-        <a id="ITWBauernhof" href="chooseAnimal.html">Bauernhof
-		<img id="backgroundimg" class="CimgAnimal" src="./img/Bauernhof.jpg" alt="./img/error.jpg"></a>
+        <button id="ITWBauernhof" onclick="document.location = './chooseAnimal.html'">Bauernhof
+		    <img id="backgroundimg" class="CimgAnimal" src="./img/Bauernhof.JPG" >
+        </button>
     </section>
 		</button>
     
