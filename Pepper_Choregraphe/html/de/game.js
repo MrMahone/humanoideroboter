@@ -23,6 +23,8 @@ var infos;
 var prev;
 var arrow;
 
+alert('ss');
+
 function onButtonSpeakerClick(){
     var audio = document.getElementById('IAudio');
     audio.src = Games[idGame].sounds;
@@ -83,8 +85,7 @@ function onLoad(){
     arrow.style.visibility = 'hidden';
 
     setGames();
-    //renameButtons();
-    showInfo('Von welchem Tier stammt dieses Geräusch?',2,function () {
+    showInfo('Von welchem Tier stammt dieses Geräusch?', 2, function () {
         speaker.style.visibility = 'visible';
         setImgs();
         onButtonSpeakerClick();
@@ -123,7 +124,9 @@ function onImgClick(pos){
         });
     } else {
         //false image has been selected
-        showInfo('Ich glaube, das war ein anderes Tier.', 3 ,);
+        showInfo('Ich glaube, das war ein anderes Tier.', 3 ,function () {
+
+        });
     }
 }
 function showInfo(text, duration, toDo) {
@@ -140,7 +143,6 @@ function showInfo(text, duration, toDo) {
     }, duration*1000);
 
 }
-
 
 function appendGame(leftImgs, rightImgs, correctImgs, sound){
     var gameParts = [];
