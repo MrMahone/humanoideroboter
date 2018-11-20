@@ -12,9 +12,12 @@
  */
 
 var idGame; //id für Auswahl der Spielreihe
+var counter;
 var Games = [];
 var leftImg;
 var rightImg;
+var leftBut;
+var rightBut;
 var speaker;
 var infos;
 var prev;
@@ -28,8 +31,12 @@ function onButtonSpeakerClick(){
 
 
 function setImgs(){
+    //set new Images
     leftImg.src = Games[idGame].GameParts[Games[idGame].solvedParts].leftImg;
     rightImg.src = Games[idGame].GameParts[Games[idGame].solvedParts].rightImg;
+    renameButton();
+
+    //set name of previous on top middle
     if(Games[idGame].solvedParts > 0){
         var text = '';
         if(Games[idGame].GameParts[(Games[idGame].solvedParts - 1)].correctImg === 'l') {
@@ -51,19 +58,32 @@ function setImgs(){
         arrow.style.visibility = 'hidden';
     }
 }
+
+function renameButton() {
+    if(Games[idGame].GameParts[Games[idGame].solvedParts].correctImg === 'l') {
+        leftBut.id = 'correct' + counter++;
+    } else {
+        rightBut.id = 'correct' + counter++;
+    }
+}
+
 function onLoad(){
     leftImg = document.getElementById('IimgLeft');
     rightImg = document.getElementById('IimgRight');
+    leftBut = document.getElementById('ILeft');
+    rightBut = document.getElementById('IRight');
     speaker = document.getElementById('ISpeaker');
     infos = document.getElementById('Iinfos');
     prev = document.getElementById('IPrev');
     arrow = document.getElementById('IImgArrow');
+    counter = 0;
+    idGame = 0;
 
     speaker.style.visibility = 'hidden';
     arrow.style.visibility = 'hidden';
 
     setGames();
-    idGame = 0;
+    //renameButton();
     showInfo('Von welchem Tier stammt dieses Geräusch?',2,function () {
         speaker.style.visibility = 'visible';
         setImgs();
