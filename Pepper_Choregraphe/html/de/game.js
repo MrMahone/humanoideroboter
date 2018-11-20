@@ -34,7 +34,15 @@ function setImgs(){
     //set new Images
     leftImg.src = Games[idGame].GameParts[Games[idGame].solvedParts].leftImg;
     rightImg.src = Games[idGame].GameParts[Games[idGame].solvedParts].rightImg;
-    renameButton();
+
+    //rename Buttons
+    if(Games[idGame].GameParts[Games[idGame].solvedParts].correctImg === 'l') {
+        leftBut.id = 'correct' + counter;
+        rightBut.id = 'false' + counter++;
+    } else {
+        rightBut.id = 'correct' + counter;
+        leftBut.id = 'false' + counter++;
+    }
 
     //set name of previous on top middle
     if(Games[idGame].solvedParts > 0){
@@ -59,14 +67,6 @@ function setImgs(){
     }
 }
 
-function renameButton() {
-    if(Games[idGame].GameParts[Games[idGame].solvedParts].correctImg === 'l') {
-        leftBut.id = 'correct' + counter++;
-    } else {
-        rightBut.id = 'correct' + counter++;
-    }
-}
-
 function onLoad(){
     leftImg = document.getElementById('IimgLeft');
     rightImg = document.getElementById('IimgRight');
@@ -83,7 +83,7 @@ function onLoad(){
     arrow.style.visibility = 'hidden';
 
     setGames();
-    //renameButton();
+    //renameButtons();
     showInfo('Von welchem Tier stammt dieses Geräusch?',2,function () {
         speaker.style.visibility = 'visible';
         setImgs();
@@ -121,14 +121,21 @@ function onImgClick(pos){
                 setImgs();
             }
         });
+    } else {
+        //false image has been selected
+        showInfo('Ich glaube, das war ein anderes Tier.', 3 ,);
     }
 }
 function showInfo(text, duration, toDo) {
     infos.innerHTML = text;
     infos.style.visibility = 'visible';
+    leftBut.disabled = true;
+    rightBut.disabled = true;
     setTimeout(function(){
-
         infos.style.visibility = 'hidden';
+        leftBut.disabled = false;
+        rightBut.disabled = false;
+
         toDo();
     }, duration*1000);
 
