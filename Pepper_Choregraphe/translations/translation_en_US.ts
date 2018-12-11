@@ -170,7 +170,7 @@
             <translation type="obsolete">....</translation>
         </message>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -259,7 +259,7 @@
             <translation type="obsolete">Super, mein Kaminabend ist gerettet.</translation>
         </message>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -367,7 +367,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (34)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -376,7 +376,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (35)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -385,7 +385,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (36)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -394,7 +394,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (37)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -403,7 +403,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (38)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -412,7 +412,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (39)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -430,7 +430,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (40)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -439,7 +439,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (41)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -448,7 +448,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (42)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -457,7 +457,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (43)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -466,7 +466,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (44)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -475,7 +475,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (45)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -484,7 +484,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (46)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -493,7 +493,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (47)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -502,7 +502,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (48)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -511,7 +511,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (49)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -529,7 +529,7 @@ Doch habe ich einige Dinge durcheinander gebracht. </translation>
     <context>
         <name>behavior_1/behavior.xar:/Say (50)</name>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/bin/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>

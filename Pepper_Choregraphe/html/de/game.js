@@ -38,11 +38,11 @@ function setImgs(){
 
     //rename Buttons
     if(Games[idGame].GameParts[Games[idGame].solvedParts].correctImg === 'l') {
-        leftBut.id = 'correct' + counter;
-        rightBut.id = 'false' + counter++;
+        leftBut.id = 'c' + counter;
+        rightBut.id = 'f' + counter++;
     } else {
-        rightBut.id = 'correct' + counter;
-        leftBut.id = 'false' + counter++;
+        rightBut.id = 'c' + counter;
+        leftBut.id = 'f' + counter++;
     }
 
     //set name of previous on top middle
