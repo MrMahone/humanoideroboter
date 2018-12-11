@@ -134,12 +134,12 @@ function onImgClick(pos){
 function showInfo(text, duration, toDo) {
     infos.innerHTML = text;
     infos.style.visibility = 'visible';
-    leftBut.disabled = true;
-    rightBut.disabled = true;
+    leftBut.enabled = false;
+    rightBut.enabled = false;
     setTimeout(function(){
         infos.style.visibility = 'hidden';
-        leftBut.disabled = false;
-        rightBut.disabled = false;
+        leftBut.enabled = true;
+        rightBut.enabled = true;
 
         toDo();
     }, duration*1000);

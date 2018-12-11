@@ -23,7 +23,6 @@
         <File name="Bauernhof" src="html/de/img/Bauernhof.JPG" />
         <File name="Brot" src="html/de/img/Brot.jpg" />
         <File name="Ei" src="html/de/img/Ei.jpg" />
-        <File name="Elefant" src="html/de/img/Elefant.jpg" />
         <File name="Esel" src="html/de/img/Esel.jpg" />
         <File name="Hahn" src="html/de/img/Hahn.jpg" />
         <File name="Huhn" src="html/de/img/Huhn.jpg" />
