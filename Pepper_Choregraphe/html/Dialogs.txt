@@ -1,3 +1,19 @@
+Dialoge für Themenwelt Bauernhof:
+Format (ausgenommen Intro):
+
+$Einstieg
+Richtiges Bild
+Falsches Bild
+mehrmals falsch
+
+(opt) Frage nächste Runde
+(opt) Einstieg nächste Runde
+(opt) Abbruch Spiel
+
+Leere Zeilen werden ignoriert.
+
+
+Dialoge:
 $Am Wochenende war ich auf dem Bauernhof und habe viel dazu gelernt.
 Doch habe ich einige Dinge durcheinander gebracht. 
 

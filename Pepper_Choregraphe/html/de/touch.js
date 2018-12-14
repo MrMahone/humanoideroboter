@@ -54,6 +54,7 @@ function sendData(buttonID){
 		var number = parseInt(buttonID[1]);
 
 		if (buttonID[0] === 'c'){
+
 			// dialog for correct image
 			out.push(dialogs[number][1]);
 			if (dialogs[number].length > 4){

@@ -96,7 +96,7 @@ function onLoad(){
 
 }
 function selectNewGame(){
-    // now the first Game is played always. random could be implemented
+    // now, the first Game is played always. random could be implemented
     // idGame remains 0
     Games.shift();
     if(Games.length > 0){
