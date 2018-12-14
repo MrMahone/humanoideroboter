@@ -1,6 +1,8 @@
 var locked = false;
 var memory;
+var dialogs = [[]];
 
+getDialogs('../Dialogs.txt');
 // function to catch missing console on robot
 // only usable if used on local browser
 function logthis(message){
@@ -42,6 +44,38 @@ function onTouchDown(data){
 		}
 		
 	}
+}
+function getDialogs(path){
+	var rawFile = new XMLHttpRequest();
+	rawFile.open("GET", path, false);
+	var current = [''];
+	dialogs = [[]];
+	rawFile.onreadystatechange = function ()
+	{
+		if(rawFile.readyState === 4)
+		{
+			if(rawFile.status === 200 || rawFile.status === 0)
+			{
+				var lines = rawFile.responseText.split('\n');
+
+				for (var i = 0; i < lines.length; i++){
+					//console.log(lines[i]);
+					if (lines[i].length < 2){
+						// empty lines are ignored
+						continue;
+					}else if(lines[i][0] === '$'){
+						// new Dialog started
+						dialogs.push(current);
+						current = [lines[i].substr(1).replace('\r','')];
+					} else {
+						current.push(lines[i].replace('\r',''));
+					}
+				}
+				console.log(dialogs);
+			}
+		}
+	};
+	rawFile.send(null);
 }
 
 function alOnClick(value){

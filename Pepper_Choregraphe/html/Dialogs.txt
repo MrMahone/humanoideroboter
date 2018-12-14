@@ -1,4 +1,4 @@
-Intro: Am Wochenende war ich auf dem Bauernhof und habe viel dazu gelernt. 
+$Am Wochenende war ich auf dem Bauernhof und habe viel dazu gelernt.
 Doch habe ich einige Dinge durcheinander gebracht. 
 
 $Von welchem Tier stammt dieses Ger�usch?
@@ -6,14 +6,14 @@ Stimmt, das habe ich schon einmal bei meinem Opa auf dem Bauernhof geh�rt.
 Nein, versuche noch einmal das Ger�usch zu erkennen
 Ich glaube, es ist die Kuh.
 
-F�r meinen Kakao brauche ich noch etwas von der Kuh. Was k�nnte es sein?
+$F�r meinen Kakao brauche ich noch etwas von der Kuh. Was k�nnte es sein?
 Super, mein Kaminabend ist gerettet.
 Ich glaube, das Brot kann ich nicht trinken.
 Ich erinnere mich wieder, ich brauche Kakaopulver und Milch.
 
-Milch kann man auch zum Herstellen von anderen Lebensmitteln nutzen, war das f�r Wurst oder K�se?
+$Milch kann man auch zum Herstellen von anderen Lebensmitteln nutzen, war das f�r Wurst oder K�se?
 Ja, jetzt esse ich erstmal ein K�sebrot.
-Wie m�chtest du denn Wurst aus Milch machen? Ich glaube das funktioniert nicht. Versuch es nochmal.
+Ich glaube Wurst kann man nicht aus Milch machen. Versuch es nochmal.
 Moment, steht K�se im Supermarkt nicht bei den Milchwaren? Ich denke so war es.
 
 Das hat Spa� gemacht. M�chtest du noch eine Runde mit mir spielen?
@@ -26,31 +26,31 @@ Ja! Super! Weiter geht's.
 Nein, h�re nochmal genauer hin.
 Welches Tier schreit morgens? - Ah, ich glaube es ist der Hahn.
 
-Und was kann ich mir morgens bei den H�hnern abholen? 
+$Und was kann ich mir morgens bei den H�hnern abholen?
 Ja genau, morgens gibt es immer frischgelegte Eier.
 Das ist so nicht richtig.
 Mehl kann ich aus Getreide gewinnen, von den H�hnern bekomme ich Eier.
 
-Und was kann ich mir zum Fr�hst�ck leckeres mit Eiern braten?
+$Und was kann ich mir zum Fr�hst�ck leckeres mit Eiern braten?
 Ja genau, besonders lecker finde ich es mit Speck.
 leider nicht, versuche es nochmal.
 Ich glaube Spiegelei ist hier gemeint.
 
-Klasse, wieder eine tolle Runde. Willst du noch eine letzte Runde spielen? 
+Klasse, wieder eine tolle Runde. Willst du noch eine letzte Runde spielen?
 Klasse, dann geht es jetzt weiter!
 Schade, dann bis zum n�chsten Mal!
 
 $An welches Tier erinnert dich dieses Ger�usch?
 Ja genau, es ist das Schaf!
-Ich habe noch nie ein Hund soetwas machen geh�rt.
+Ich denke das war nicht der Hund. Versuche ein nochmal!
 Ich wei� gar nicht was die Schnecke f�r Ger�usche macht. Es war wohl eher das Schaf.
 
-und wovon hat das Schaf im Sommer viel zu viel?
+$und wovon hat das Schaf im Sommer viel zu viel?
 Ja genau, es muss geschoren werden, weil dem Schaf sonst im Sommer zu warm ist.
 Ne, also das kann ich mir nicht vorstellen. Nochmal!
 Das Schaf hat ganz kuschelige, warme Wolle.
 
-Und was kann ich mit der ganzen Wolle machen, damit ich im Winter nicht friere?
+$Und was kann ich mit der ganzen Wolle machen, damit ich im Winter nicht friere?
 Ja genau, meine Oma hat mir immer M�tzen gestrickt.
 Das geht doch nicht, probier es noch einmal.
 Mehrmals falsch: Nein, die dicken Socken sind aus der weichen Wolle gestrickt.

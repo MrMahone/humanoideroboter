@@ -22,6 +22,7 @@ var speaker;
 var infos;
 var prev;
 var arrow;
+var falseCounter;
 
 
 function onButtonSpeakerClick(){
@@ -38,11 +39,11 @@ function setImgs(){
 
     //rename Buttons
     if(Games[idGame].GameParts[Games[idGame].solvedParts].correctImg === 'l') {
-        leftBut.id = 'c' + counter;
-        rightBut.id = 'f' + counter++;
+        leftBut.id = 'correct' + counter;
+        rightBut.id = 'false' + counter++;
     } else {
-        rightBut.id = 'c' + counter;
-        leftBut.id = 'f' + counter++;
+        rightBut.id = 'correct' + counter;
+        leftBut.id = 'false' + counter++;
     }
 
     //set name of previous on top middle
@@ -79,6 +80,7 @@ function onLoad(){
     arrow = document.getElementById('IImgArrow');
     counter = 1;
     idGame = 0;
+    falseCounter = 0;
 
     speaker.style.visibility = 'hidden';
     arrow.style.visibility = 'hidden';
