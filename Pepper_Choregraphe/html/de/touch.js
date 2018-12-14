@@ -1,6 +1,6 @@
 var locked = false;
 var memory;
-var dialogs = [[]];
+var dialogs;
 
 getDialogs('../Dialogs.txt');
 // function to catch missing console on robot
@@ -10,7 +10,6 @@ function logthis(message){
 		console.log(message);
 	} catch(err){}
 }
-
 // Callback touch event
 function onTouchDown(data){
 	logthis("touch down");
@@ -32,30 +31,70 @@ function onTouchDown(data){
 				'cancelable': false
 			});
 			el.dispatchEvent(ev);
-			
+			logthis(el);
 			// check if element or parent element is button
 			if( el.tagName == 'BUTTON' ){
 				logthis(el);
-				memory.raiseEvent( "custom/tablet/onButtonClick", el.id );
+				sendData(el.id);
 			} else if( el.parentElement != null && el.parentElement.tagName == 'BUTTON' ){
 				logthis(el.parentElement);
-				memory.raiseEvent( "custom/tablet/onButtonClick", el.parentElement.id );
+				sendData(el.id);
 			}
 		}
 		
 	}
 }
+function sendData(buttonID){
+	// get the correct Dialogs to send it to choregraphe
+	if (dialogs == null){
+		getDialogs('../Dialogs.txt');
+	}
+	if(buttonID.length === 2){
+		var out = [];
+		var number = parseInt(buttonID[1]);
+
+		if (buttonID[0] === 'c'){
+			// dialog for correct image
+			out.push(dialogs[number][1]);
+			if (dialogs[number].length > 4){
+				if (dialogs[number].length < 6) {
+					//last Round finished
+					out.push(dialogs[number][4]);
+				}else {
+					// dialog for new round
+					out.push(dialogs[number][5]);
+				}
+			}
+			if (dialogs.length > (number + 1)){
+				// introduction into new task
+				out.push(dialogs[number + 1][0]);
+			}
+		} else if (buttonID[0] === 'f' ){
+			// wrong answer
+			out.push(dialogs[number][2]);
+		} else {
+			//some unknown button was called
+			logthis('Unknown button called: ' + buttonID);
+		}
+		logthis(out);
+		memory.raiseEvent( "custom/tablet/onButtonClick", out );
+	} else if (buttonID === 'ITWBauernhof'){
+		memory.raiseEvent( "custom/tablet/onButtonClick", dialogs[0] );
+	}
+}
+//catch the Dialogs from a .txt file
 function getDialogs(path){
 	var rawFile = new XMLHttpRequest();
-	rawFile.open("GET", path, false);
-	var current = [''];
-	dialogs = [[]];
+	rawFile.open("GET", path, true);
+	var current = null;
+	dialogs = [];
 	rawFile.onreadystatechange = function ()
 	{
 		if(rawFile.readyState === 4)
 		{
 			if(rawFile.status === 200 || rawFile.status === 0)
 			{
+				// File was successfully read
 				var lines = rawFile.responseText.split('\n');
 
 				for (var i = 0; i < lines.length; i++){
@@ -65,13 +104,15 @@ function getDialogs(path){
 						continue;
 					}else if(lines[i][0] === '$'){
 						// new Dialog started
-						dialogs.push(current);
+						if (current != null) {
+							dialogs.push(current);
+						}
 						current = [lines[i].substr(1).replace('\r','')];
 					} else {
 						current.push(lines[i].replace('\r',''));
 					}
 				}
-				console.log(dialogs);
+				dialogs.push(current);
 			}
 		}
 	};
