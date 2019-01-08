@@ -133,7 +133,7 @@ function onImgClick(pos){
         } else {
             sendData(rightBut.id);
         }
-        showInfo('Richtig!\n Toll gemacht!', 7, function () {
+        showInfo('Richtig!', 7, function () {
 
             correctImg();
         });

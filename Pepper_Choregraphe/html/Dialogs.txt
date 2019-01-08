@@ -18,19 +18,19 @@ $Am Wochenende war ich auf dem Bauernhof und habe viel dazu gelernt.
 Doch habe ich einige Dinge durcheinander gebracht. 
 
 $Von welchem Tier stammt dieses Ger�usch?
-Stimmt, das habe ich schon einmal bei meinem Opa auf dem Bauernhof geh�rt.
-Nein, versuche noch einmal das Ger�usch zu erkennen
-Ich glaube, es ist die Kuh.
+Richtig, das habe ich schon einmal bei meinem Opa auf dem Bauernhof geh�rt.
+Das war es glaube ich nicht, versuche noch einmal das Ger�usch zu erkennen
+Ich errinnere mich, es ist die Kuh.
 
 $F�r meinen Kakao brauche ich noch etwas von der Kuh. Was k�nnte es sein?
-Super, mein Kaminabend ist gerettet.
-Ich glaube, das Brot kann ich nicht trinken.
+Richtig, mein Kaminabend ist gerettet.
+Das war es glaube ich nicht, das Brot kann ich nicht trinken.
 Ich erinnere mich wieder, ich brauche Kakaopulver und Milch.
 
 $Milch kann man auch zum Herstellen von anderen Lebensmitteln nutzen, war das f�r Wurst oder K�se?
-Ja, jetzt esse ich erstmal ein K�sebrot.
-Ich glaube Wurst kann man nicht aus Milch machen. Versuch es nochmal.
-Moment, steht K�se im Supermarkt nicht bei den Milchwaren? Ich denke so war es.
+Richtig, genau. jetzt esse ich erstmal ein K�sebrot.
+Das war es glaube ich nicht. Wurst kann man nicht aus Milch machen. Versuch es nochmal.
+Ich errinnere mich, steht K�se im Supermarkt nicht bei den Milchwaren? Ich denke so war es.
 
 Das hat Spa� gemacht. M�chtest du noch eine Runde mit mir spielen?
 Toll, weiter geht's in die nächste Runde!
@@ -38,37 +38,37 @@ Schade, dann bis zum n�chsten Mal!
 
 
 $welches Tier macht denn dieses Ger�usch?
-Ja! Super! Weiter geht's.
-Nein, h�re nochmal genauer hin.
-Welches Tier schreit morgens? - Ah, ich glaube es ist der Hahn.
+Richtig! Super! Weiter geht's.
+Das war es glaube ich nicht. h�re nochmal genauer hin.
+Ich errinnere mich. Das Huhn macht solche Geräusche.
 
 $Und was kann ich mir morgens bei den H�hnern abholen?
-Ja genau, morgens gibt es immer frischgelegte Eier.
-Das ist so nicht richtig.
-Mehl kann ich aus Getreide gewinnen, von den H�hnern bekomme ich Eier.
+Richtig, morgens gibt es immer frischgelegte Eier.
+Das war es glaube ich nicht. Bei den Hühnern kann ich etwas anderes abholen.
+Ich errinnere mich. Mehl kann ich aus Getreide gewinnen, von den H�hnern bekomme ich Eier.
 
 $Und was kann ich mir zum Fr�hst�ck leckeres mit Eiern braten?
-Ja genau, besonders lecker finde ich es mit Speck.
-leider nicht, versuche es nochmal.
-Ich glaube Spiegelei ist hier gemeint.
+Richtig, besonders lecker finde ich es mit Speck.
+Das war es glaube ich nicht., versuche es nochmal.
+Ich errinnere mich. Ich glaube Spiegelei ist hier gemeint.
 
 Klasse, wieder eine tolle Runde. Willst du noch eine letzte Runde spielen?
 Klasse, dann geht es jetzt weiter!
 Schade, dann bis zum n�chsten Mal!
 
 $An welches Tier erinnert dich dieses Ger�usch?
-Ja genau, es ist das Schaf!
-Ich denke das war nicht der Hund. Versuche ein nochmal!
-Ich wei� gar nicht was die Schnecke f�r Ger�usche macht. Es war wohl eher das Schaf.
+Richtig, genau, es ist das Schaf!
+Das war es glaube ich nicht. Versuche ein nochmal!
+Ich errinnere mich. Es war wohl eher das Schaf.
 
 $und wovon hat das Schaf im Sommer viel zu viel?
-Ja genau, es muss geschoren werden, weil dem Schaf sonst im Sommer zu warm ist.
-Ne, also das kann ich mir nicht vorstellen. Nochmal!
-Das Schaf hat ganz kuschelige, warme Wolle.
+Richtig, es muss geschoren werden, weil dem Schaf sonst im Sommer zu warm ist.
+Das war es glaube ich nicht, also das kann ich mir nicht vorstellen. Nochmal!
+Ich errinnere mich. Das Schaf hat ganz kuschelige, warme Wolle.
 
 $Und was kann ich mit der ganzen Wolle machen, damit ich im Winter nicht friere?
-Ja genau, meine Oma hat mir immer M�tzen gestrickt.
-Das geht doch nicht, probier es noch einmal.
-Mehrmals falsch: Nein, die dicken Socken sind aus der weichen Wolle gestrickt.
+Richtig, meine Oma hat mir immer M�tzen gestrickt.
+Das war es glaube ich nicht, probier es noch einmal.
+Ich errinnere mich, die dicken Socken sind aus der weichen Wolle gestrickt.
 
 Klasse, nun ist wieder alles richtig. Danke f�r deine tolle Unterst�tzung! 
