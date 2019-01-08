@@ -1,10 +1,10 @@
 Dialoge für Themenwelt Bauernhof:
 Format (ausgenommen Intro):
 
-$Einstieg
-Richtiges Bild
-Falsches Bild
-mehrmals falsch
+ $Einstieg
+ Richtiges Bild
+ Falsches Bild
+ mehrmals falsch
 
 (opt) Frage nächste Runde
 (opt) Einstieg nächste Runde

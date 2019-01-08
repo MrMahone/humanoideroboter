@@ -11,7 +11,7 @@ function logthis(message){
 	} catch(err){}
 }
 // Callback touch event
-function onTouchDown(data){
+/*function onTouchDown(data){
 	logthis("touch down");
 	if( !locked ){
 	
@@ -43,44 +43,51 @@ function onTouchDown(data){
 		}
 		
 	}
-}
+}*/
 function sendData(buttonID){
 	// get the correct Dialogs to send it to choregraphe
 	if (dialogs == null){
 		getDialogs('../Dialogs.txt');
 	}
+	var out = [];
 	if(buttonID.length === 2){
-		var out = [];
+
 		var number = parseInt(buttonID[1]);
-
 		if (buttonID[0] === 'c'){
-
 			// dialog for correct image
 			out.push(dialogs[number][1]);
-			if (dialogs[number].length > 4){
-				if (dialogs[number].length < 6) {
-					//last Round finished
-					out.push(dialogs[number][4]);
-				}else {
-					// dialog for new round
-					out.push(dialogs[number][5]);
-				}
-			}
-			if (dialogs.length > (number + 1)){
-				// introduction into new task
-				out.push(dialogs[number + 1][0]);
-			}
 		} else if (buttonID[0] === 'f' ){
 			// wrong answer
 			out.push(dialogs[number][2]);
+		} else if (buttonID[0] === 'm' ){
+			// wrong answer was given multiple times
+			out.push(dialogs[number][3]);
 		} else {
 			//some unknown button was called
 			logthis('Unknown button called: ' + buttonID);
+			return;
+		}
+		if (dialogs[number].length > 4){
+			if (dialogs[number].length < 6) {
+				//last Round finished
+				out.push(dialogs[number][4]);
+			}else {
+				// dialog for new round
+				out.push(dialogs[number][5]);
+			}
+		}
+		if (dialogs.length > (number + 1)){
+			// introduction into new task
+			out.push(dialogs[number + 1][0]);
 		}
 		logthis(out);
 		memory.raiseEvent( "custom/tablet/onButtonClick", out );
 	} else if (buttonID === 'ITWBauernhof'){
-		memory.raiseEvent( "custom/tablet/onButtonClick", dialogs[0] );
+		out.push(dialogs[0][0]);
+		out.push(dialogs[0][1]);
+		out.push(dialogs[1][0]);
+		logthis(out);
+		memory.raiseEvent( "custom/tablet/onButtonClick", out );
 	}
 }
 //catch the Dialogs from a .txt file
@@ -99,7 +106,7 @@ function getDialogs(path){
 				var lines = rawFile.responseText.split('\n');
 
 				for (var i = 0; i < lines.length; i++){
-					//console.log(lines[i]);
+					//logthis(lines[i]);
 					if (lines[i].length < 2){
 						// empty lines are ignored
 						continue;
@@ -109,7 +116,7 @@ function getDialogs(path){
 							dialogs.push(current);
 						}
 						current = [lines[i].substr(1).replace('\r','')];
-					} else {
+					} else if(current != null) {
 						current.push(lines[i].replace('\r',''));
 					}
 				}
@@ -117,7 +124,9 @@ function getDialogs(path){
 			}
 		}
 	};
+
 	rawFile.send(null);
+	logthis(dialogs);
 }
 
 function alOnClick(value){

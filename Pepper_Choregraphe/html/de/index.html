@@ -7,19 +7,17 @@
 
     <script src="./jquery.min.js"></script>		<!-- lib required from touch.js -->
     <script src="./robotutils.js"></script> 		<!-- handles connection to naoqi api -->
-    <script src="./touch.js"></script>			<!-- inlcudes functions to handle touch events and sync with choregraphe -->
+    <script src="./touch.js"></script>			<!-- includes functions to handle touch events and sync with choregraphe -->
 
     <title>Themenwelt</title>
 </head>
 <body>
-<button id="chooseanimal">
 <section class="CchooseTW">
 		<h1>Willkommen in der Themenwelt!</h1>
-        <button id="ITWBauernhof" onclick="document.location = './chooseAnimal.html'">Bauernhof
+        <button id="ITWBauernhof" onclick="document.location = './chooseAnimal.html';sendData('ITWBauernhof');">
 		    <img id="backgroundimg" class="CimgAnimal" src="./img/Bauernhof.JPG" >
         </button>
     </section>
-		</button>
     
     
 </body>

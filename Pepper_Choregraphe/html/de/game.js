@@ -39,11 +39,11 @@ function setImgs(){
 
     //rename Buttons
     if(Games[idGame].GameParts[Games[idGame].solvedParts].correctImg === 'l') {
-        leftBut.id = 'correct' + counter;
-        rightBut.id = 'false' + counter++;
+        leftBut.id = 'c' + counter;
+        rightBut.id = 'f' + counter++;
     } else {
-        rightBut.id = 'correct' + counter;
-        leftBut.id = 'false' + counter++;
+        rightBut.id = 'c' + counter;
+        leftBut.id = 'f' + counter++;
     }
 
     //set name of previous on top middle
@@ -113,24 +113,54 @@ function selectNewGame(){
         })
     }
 }
+function correctImg() {
+    if (++Games[idGame].solvedParts === Games[idGame].GameParts.length) {
+        //all parts solved
+        selectNewGame();
+    } else {
+        //next Part
+        speaker.style.visibility = 'hidden';
+        setImgs();
+    }
+}
 function onImgClick(pos){
+    console.log('ButtonClick!');
     if (Games[idGame].GameParts[Games[idGame].solvedParts].correctImg === pos){
         //correct Image has been selected
+        falseCounter = 0;
+        if(pos === 'l') {
+            sendData(leftBut.id);
+        } else {
+            sendData(rightBut.id);
+        }
         showInfo('Richtig!\n Toll gemacht!', 7, function () {
-            if (++Games[idGame].solvedParts === Games[idGame].GameParts.length) {
-                //all parts solved
-                selectNewGame();
-            } else {
-                //next Part
-                speaker.style.visibility = 'hidden';
-                setImgs();
-            }
+
+            correctImg();
         });
     } else {
-        //false image has been selected
-        showInfo('Das war es glaube ich nicht.', 4 ,function () {
+        if(++falseCounter >= 3){
+            // false image has been selected 3 times in a row
+            falseCounter = 0;
+            if(pos === 'l') {
+                sendData('m' + leftBut.id[1]);
+            } else {
+                sendData('m' + rightBut.id[1]);
+            }
+            showInfo('Ich errinnere mich.', 7, function () {
 
-        });
+                correctImg();
+            });
+        } else {
+            //false image has been selected
+            if(pos === 'l') {
+                sendData(leftBut.id);
+            } else {
+                sendData(rightBut.id);
+            }
+            showInfo('Das war es glaube ich nicht.', 4, function () {
+
+            });
+        }
     }
 }
 function showInfo(text, duration, toDo) {
