@@ -10,6 +10,8 @@ function logthis(message){
 		console.log(message);
 	} catch(err){}
 }
+
+// old function; kept if it will may be necessary to catch the touchDown Event later again
 // Callback touch event
 /*function onTouchDown(data){
 	logthis("touch down");

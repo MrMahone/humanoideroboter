@@ -17,7 +17,7 @@ Dialoge:
 $Am Wochenende war ich auf dem Bauernhof und habe viel dazu gelernt.
 Doch habe ich einige Dinge durcheinander gebracht. 
 
-$Von welchem Tier stammt dieses Ger�usch?
+$Von welchem Tier stammt dieses Geräusch?
 Richtig, das habe ich schon einmal bei meinem Opa auf dem Bauernhof geh�rt.
 Das war es glaube ich nicht, versuche noch einmal das Ger�usch zu erkennen
 Ich errinnere mich, es ist die Kuh.
@@ -42,7 +42,7 @@ Richtig! Super! Weiter geht's.
 Das war es glaube ich nicht. h�re nochmal genauer hin.
 Ich errinnere mich. Das Huhn macht solche Geräusche.
 
-$Und was kann ich mir morgens bei den H�hnern abholen?
+$Und was kann ich mir morgens bei den Hühnern abholen?
 Richtig, morgens gibt es immer frischgelegte Eier.
 Das war es glaube ich nicht. Bei den Hühnern kann ich etwas anderes abholen.
 Ich errinnere mich. Mehl kann ich aus Getreide gewinnen, von den H�hnern bekomme ich Eier.

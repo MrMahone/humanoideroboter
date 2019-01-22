@@ -46,7 +46,6 @@
         <File name="Wurst" src="html/de/img/Wurst.jpg" />
         <File name="error" src="html/de/img/error.jpg" />
         <File name="lautsprecher" src="html/de/img/lautsprecher.jpg" />
-        <File name="Dialogs" src="html/de/Dialogs.txt" />
     </Resources>
     <Topics />
     <IgnoredPaths />
