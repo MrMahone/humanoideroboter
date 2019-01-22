@@ -55,36 +55,43 @@ function sendData(buttonID){
 	if(buttonID.length === 2){
 
 		var number = parseInt(buttonID[1]);
-		if (buttonID[0] === 'c'){
-			// dialog for correct image
-			out.push(dialogs[number][1]);
-		} else if (buttonID[0] === 'f' ){
+		if (buttonID[0] === 'f' ){
 			// wrong answer
 			out.push(dialogs[number][2]);
-		} else if (buttonID[0] === 'm' ){
-			// wrong answer was given multiple times
-			out.push(dialogs[number][3]);
+			memory.raiseEvent( "custom/tablet/onButtonClick", '0' );
 		} else {
-			//some unknown button was called
-			logthis('Unknown button called: ' + buttonID);
-			return;
-		}
-		if (dialogs[number].length > 4){
-			if (dialogs[number].length < 6) {
-				//last Round finished
-				out.push(dialogs[number][4]);
-			}else {
-				// dialog for new round
-				out.push(dialogs[number][5]);
+			if (buttonID[0] === 'c') {
+				// dialog for correct image
+				out.push(dialogs[number][1]);
+				memory.raiseEvent( "custom/tablet/onButtonClick", '1' );
+			} else
+			if (buttonID[0] === 'm') {
+				// wrong answer was given multiple times
+				out.push(dialogs[number][3]);
+				memory.raiseEvent( "custom/tablet/onButtonClick", '2' );
+			} else {
+				//some unknown button was called
+				logthis('Unknown button called: ' + buttonID);
+				return;
 			}
-		}
-		if (dialogs.length > (number + 1)){
-			// introduction into new task
-			out.push(dialogs[number + 1][0]);
+			if (dialogs[number].length > 4) {
+				if (dialogs[number].length < 6) {
+					//last Round finished
+					out.push(dialogs[number][4]);
+				} else {
+					// dialog for new round
+					out.push(dialogs[number][5]);
+				}
+			}
+			if (dialogs.length > (number + 1)) {
+				// introduction into new task
+				out.push(dialogs[number + 1][0]);
+			}
 		}
 		logthis(out);
 		memory.raiseEvent( "custom/tablet/onButtonClick", out );
 	} else if (buttonID === 'ITWBauernhof'){
+		memory.raiseEvent( "custom/tablet/onButtonClick", '2' );
 		out.push(dialogs[0][0]);
 		out.push(dialogs[0][1]);
 		out.push(dialogs[1][0]);

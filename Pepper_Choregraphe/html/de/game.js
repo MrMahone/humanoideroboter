@@ -100,7 +100,7 @@ function selectNewGame(){
     // idGame remains 0
     Games.shift();
     if(Games.length > 0){
-        showInfo('Neue Runde', 2, function () {
+        showInfo('Neue Runde', 4, function () {
             //there is still a Game to select
             speaker.style.visibility = 'visible';
             setImgs();
@@ -146,7 +146,7 @@ function onImgClick(pos){
             } else {
                 sendData('m' + rightBut.id[1]);
             }
-            showInfo('Ich errinnere mich.', 7, function () {
+            showInfo('Ich errinnere mich.', 6, function () {
 
                 correctImg();
             });

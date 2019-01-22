@@ -11,10 +11,14 @@
 
     <title>Themenwelt</title>
 </head>
-<body>
+<body onload="setTimeout(function() {
+    memory.raiseEvent( 'custom/tablet/onButtonClick', '3' );
+  memory.raiseEvent('custom/tablet/onButtonClick', ['Herzlich Willkommen in der Themenwelt! Lass uns den Bauernhof besuchen!'] );
+
+}, 600)">
 <section class="CchooseTW">
 		<h1>Willkommen in der Themenwelt!</h1>
-        <button id="ITWBauernhof" onclick="document.location = './chooseAnimal.html';sendData('ITWBauernhof');">
+        <button id="ITWBauernhof" onmousedown="document.location = './chooseAnimal.html';sendData('ITWBauernhof');">
 		    <img id="backgroundimg" class="CimgAnimal" src="./img/Bauernhof.JPG" >
         </button>
     </section>

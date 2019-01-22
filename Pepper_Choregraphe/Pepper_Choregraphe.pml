@@ -44,8 +44,9 @@
         <File name="Spiegelei" src="html/de/img/Spiegelei.jpg" />
         <File name="Wolle" src="html/de/img/Wolle.jpg" />
         <File name="Wurst" src="html/de/img/Wurst.jpg" />
-        <File name="error" src="html/de/img/error.jpg" />
         <File name="lautsprecher" src="html/de/img/lautsprecher.jpg" />
+        <File name="Error" src="html/de/img/Error.jpg" />
+        <File name="Back" src="html/de/img/Back.svg" />
     </Resources>
     <Topics />
     <IgnoredPaths />

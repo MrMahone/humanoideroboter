@@ -15,19 +15,21 @@
 </head>
 <body onload="onLoad()">
 <audio id="IAudio"></audio>
-
+<button id="IBack" onmousedown="memory.raiseEvent('custom/tablet/onButtonClick', ['Tschüss'] );document.location='./index.html'">
+    <img src="./img/Back.svg" alt="zurück">
+</button>
     <section class="CchooseAnimal">
-        <button id="ILeft" onclick="onImgClick('l');">
+        <button id="ILeft" onmousedown="onImgClick('l');">
             <img id="IimgLeft" class="CimgAnimal" >
         </button>
         <article id="IMiddle">
             <section id="IPrev"></section>
             <img id="IImgArrow" class="CimgMiddle" src="img/Pfeil.jpg">
-            <button id="ISpeaker" onclick="onButtonSpeakerClick()">
+            <button id="ISpeaker" onmousedown="onButtonSpeakerClick();">
                 <img id="IImgSpeaker" class="CimgMiddle" src="./img/lautsprecher.jpg">
             </button>
         </article>
-        <button id="IRight" onclick="onImgClick('r');">
+        <button id="IRight"onmousedown="onImgClick('r');">
             <img id="IimgRight" class="CimgAnimal">
         </button>
     </section>

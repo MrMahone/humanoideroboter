@@ -18,45 +18,45 @@ $Am Wochenende war ich auf dem Bauernhof und habe viel dazu gelernt.
 Doch habe ich einige Dinge durcheinander gebracht. 
 
 $Von welchem Tier stammt dieses Geräusch?
-Richtig, das habe ich schon einmal bei meinem Opa auf dem Bauernhof geh�rt.
-Das war es glaube ich nicht, versuche noch einmal das Ger�usch zu erkennen
+Richtig, das habe ich schon einmal bei meinem Opa auf dem Bauernhof gehört.
+Das war es glaube ich nicht, versuche noch einmal das Geräusch zu erkennen
 Ich errinnere mich, es ist die Kuh.
 
-$F�r meinen Kakao brauche ich noch etwas von der Kuh. Was k�nnte es sein?
+$Für meinen Kakao brauche ich noch etwas von der Kuh. Was könnte es sein?
 Richtig, mein Kaminabend ist gerettet.
 Das war es glaube ich nicht, das Brot kann ich nicht trinken.
 Ich erinnere mich wieder, ich brauche Kakaopulver und Milch.
 
-$Milch kann man auch zum Herstellen von anderen Lebensmitteln nutzen, war das f�r Wurst oder K�se?
-Richtig, genau. jetzt esse ich erstmal ein K�sebrot.
+$Milch kann man auch zum Herstellen von anderen Lebensmitteln nutzen, war das für Wurst oder Käse?
+Richtig, genau. jetzt esse ich erstmal ein Käsebrot.
 Das war es glaube ich nicht. Wurst kann man nicht aus Milch machen. Versuch es nochmal.
-Ich errinnere mich, steht K�se im Supermarkt nicht bei den Milchwaren? Ich denke so war es.
+Ich errinnere mich, Käse steht im Supermarkt bei den Milchwaren.
 
-Das hat Spa� gemacht. M�chtest du noch eine Runde mit mir spielen?
+Das hat Spass gemacht. Möchtest du noch eine Runde mit mir spielen?
 Toll, weiter geht's in die nächste Runde!
-Schade, dann bis zum n�chsten Mal!
+Schade, dann bis zum nächsten Mal!
 
 
-$welches Tier macht denn dieses Ger�usch?
+$welches Tier macht denn dieses Geräusch?
 Richtig! Super! Weiter geht's.
-Das war es glaube ich nicht. h�re nochmal genauer hin.
+Das war es glaube ich nicht. höre nochmal genauer hin.
 Ich errinnere mich. Das Huhn macht solche Geräusche.
 
 $Und was kann ich mir morgens bei den Hühnern abholen?
 Richtig, morgens gibt es immer frischgelegte Eier.
 Das war es glaube ich nicht. Bei den Hühnern kann ich etwas anderes abholen.
-Ich errinnere mich. Mehl kann ich aus Getreide gewinnen, von den H�hnern bekomme ich Eier.
+Ich errinnere mich. Mehl kann ich aus Getreide gewinnen, von den Hühnern bekomme ich Eier.
 
-$Und was kann ich mir zum Fr�hst�ck leckeres mit Eiern braten?
+$Und was kann ich mir zum Frühstück leckeres mit Eiern braten?
 Richtig, besonders lecker finde ich es mit Speck.
 Das war es glaube ich nicht., versuche es nochmal.
 Ich errinnere mich. Ich glaube Spiegelei ist hier gemeint.
 
 Klasse, wieder eine tolle Runde. Willst du noch eine letzte Runde spielen?
 Klasse, dann geht es jetzt weiter!
-Schade, dann bis zum n�chsten Mal!
+Schade, dann bis zum nächsten Mal!
 
-$An welches Tier erinnert dich dieses Ger�usch?
+$An welches Tier erinnert dich dieses Geräusch?
 Richtig, genau, es ist das Schaf!
 Das war es glaube ich nicht. Versuche ein nochmal!
 Ich errinnere mich. Es war wohl eher das Schaf.
@@ -67,8 +67,8 @@ Das war es glaube ich nicht, also das kann ich mir nicht vorstellen. Nochmal!
 Ich errinnere mich. Das Schaf hat ganz kuschelige, warme Wolle.
 
 $Und was kann ich mit der ganzen Wolle machen, damit ich im Winter nicht friere?
-Richtig, meine Oma hat mir immer M�tzen gestrickt.
+Richtig, meine Oma hat mir immer Mützen gestrickt.
 Das war es glaube ich nicht, probier es noch einmal.
-Ich errinnere mich, die dicken Socken sind aus der weichen Wolle gestrickt.
+Ich errinnere mich, die dicke Mütze sind aus der weichen Wolle gestrickt.
 
-Klasse, nun ist wieder alles richtig. Danke f�r deine tolle Unterst�tzung! 
+Klasse, nun ist wieder alles richtig. Danke für deine tolle Unterstützung!

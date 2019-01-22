@@ -17,6 +17,10 @@
     height: 100px;
     background-color: lightgray;
 }
+#IBack img{
+    height: 40px;
+    width: 40px;
+}
 #IPrev, #IImgArrow {
     position: absolute;
     width: 140px;
