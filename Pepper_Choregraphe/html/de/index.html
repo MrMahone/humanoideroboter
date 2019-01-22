@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="./CSS/Stylesheet.css"/>
+
+    <script src="./jquery.min.js"></script>		<!-- lib required from touch.js -->
+    <script src="./robotutils.js"></script> 		<!-- handles connection to naoqi api -->
+    <script src="./touch.js"></script>			<!-- includes functions to handle touch events and sync with choregraphe -->
+
+    <title>Themenwelt</title>
+</head>
+<body onload="setTimeout(function() {
+    memory.raiseEvent( 'custom/tablet/onButtonClick', '3' );
+  memory.raiseEvent('custom/tablet/onButtonClick', ['Herzlich Willkommen in der Themenwelt! Lass uns den Bauernhof besuchen!'] );
+
+}, 600)">
+<section class="CchooseTW">
+		<h1>Willkommen in der Themenwelt!</h1>
+        <button id="ITWBauernhof" onmousedown="document.location = './chooseAnimal.html';sendData('ITWBauernhof');">
+		    <img id="backgroundimg" class="CimgAnimal" src="./img/Bauernhof.JPG" >
+        </button>
+    </section>
+    
+    
+</body>
+</html>

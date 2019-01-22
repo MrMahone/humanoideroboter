@@ -1,0 +1,73 @@
+#ITWBauernhof{
+    background: green;
+
+}
+.CchooseTW a {
+    margin: 2.5%;
+    font-size: 26px;
+    width: 500px;
+    text-underline-style: none;
+}
+#ITWBauernhof:hover {
+    background: greenyellow;
+}
+
+.CimgMiddle{
+    width: 120px;
+    height: 100px;
+    background-color: lightgray;
+}
+#IBack img{
+    height: 40px;
+    width: 40px;
+}
+#IPrev, #IImgArrow {
+    position: absolute;
+    width: 140px;
+
+    font-size: 36px;
+    text-align: center;
+}
+#IImgArrow{
+    margin-top: 50px;
+    height: 160px;
+}
+#ISpeaker{
+    margin-top: 120px;
+
+}
+.CimgAnimal {
+    margin-top: 100px;
+    width: 540px;
+    height: 450px;
+}
+
+.CchooseAnimal > *{
+    align-items: center;
+    float: left;
+    background-color: white;
+    border: none;
+}
+#Iinfos {
+
+    border: 1px solid black;
+    border-left: 10px solid darkblue;
+    background-color: lightblue;
+
+    position: absolute;
+    align-content: center;
+    margin-left: 150px;
+    margin-top: 580px;
+    width: 800px;
+    min-height: 150px;
+    max-height: 300px;
+
+    text-align: center;
+    align-items: center;
+    font-size: 36px;
+    vertical-align: center;
+
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}

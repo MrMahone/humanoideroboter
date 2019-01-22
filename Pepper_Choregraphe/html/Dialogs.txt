@@ -1,57 +1,74 @@
-Intro: Am Wochenende war ich auf dem Bauernhof und habe viel dazu gelernt. 
+Dialoge fÃ¼r Themenwelt Bauernhof:
+Format (ausgenommen Intro):
+
+ $Einstieg
+ Richtiges Bild
+ Falsches Bild
+ mehrmals falsch
+
+(opt) Frage nÃ¤chste Runde
+(opt) Einstieg nÃ¤chste Runde
+(opt) Abbruch Spiel
+
+Leere Zeilen werden ignoriert.
+
+
+Dialoge:
+$Am Wochenende war ich auf dem Bauernhof und habe viel dazu gelernt.
 Doch habe ich einige Dinge durcheinander gebracht. 
 
-Von welchem Tier stammt dieses Geräusch? - (MUH!) - 
-Auswahl Nutzer Kuh: Stimmt, das habe ich schon einmal bei meinem Opa auf dem Bauernhof gehört.
-Auswahl Ratte: Nein, versuche noch einmal das Geräusch zu erkennen (MUH!) 
-Mehrmals falsch: Ich glaube, es ist die Kuh.
+$Von welchem Tier stammt dieses GerÃ¤usch?
+Richtig, das habe ich schon einmal bei meinem Opa auf dem Bauernhof gehÃ¶rt.
+Das war es glaube ich nicht, versuche noch einmal das GerÃ¤usch zu erkennen
+Ich errinnere mich, es ist die Kuh.
 
-Für meinen Kakao brauche ich noch etwas von der Kuh. Was könnte es sein?
-Auswahl Milch: Super, mein Kaminabend ist gerettet.
-Auswahl Ei: Eier brauche ich für meinen Eierkuchen, aber für meinen Kakao brauche ich etwas anderes
-Mehrmals falsch: Ich erinnere mich wieder, ich brauche Kakaopulver und Milch.
+$FÃ¼r meinen Kakao brauche ich noch etwas von der Kuh. Was kÃ¶nnte es sein?
+Richtig, mein Kaminabend ist gerettet.
+Das war es glaube ich nicht, das Brot kann ich nicht trinken.
+Ich erinnere mich wieder, ich brauche Kakaopulver und Milch.
 
-Milch kann man auch zum Herstellen von anderen Lebensmitteln nutzen, war das für Wurst oder Käse?
-Auswahl Käse: Ja, jetzt esse ich erstmal ein Käsebrot.
-Auswahl Wurst: Wie möchtest du denn Wurst aus Milch machen? Ich glaube das funktioniert nicht. Versuch es nochmal.
-Mehrmals falsch: Moment, steht Käse im Supermarkt nicht bei den Milchwaren? Ich denke so war es.
+$Milch kann man auch zum Herstellen von anderen Lebensmitteln nutzen, war das fÃ¼r Wurst oder KÃ¤se?
+Richtig, genau. jetzt esse ich erstmal ein KÃ¤sebrot.
+Das war es glaube ich nicht. Wurst kann man nicht aus Milch machen. Versuch es nochmal.
+Ich errinnere mich, KÃ¤se steht im Supermarkt bei den Milchwaren.
 
-Das hat Spaß gemacht. Möchtest du noch eine Runde mit mir spielen?
-Auswahl Ja: Toll, weiter geht's!
-Auswahl Nein: Schade, dann bis zum nächsten Mal!
+Das hat Spass gemacht. MÃ¶chtest du noch eine Runde mit mir spielen?
+Toll, weiter geht's in die nÃ¤chste Runde!
+Schade, dann bis zum nÃ¤chsten Mal!
 
-Hm, welches Tier macht denn dieses Geräusch? (KIKERIKI!) (ist kikeriki nicht der hahn, der keine eier legt?!?!?!?!?!!!!11!eins)
-Auswahl Huhn: Ja! Super! Weiter geht's. 
-Auswahl Esel: Nein, höre nochmal genauer hin. (KIKERIKI!) 
-Mehrmals falsch: Welches Tier schreit morgens? - Ah, ich glaube es ist der Hahn. 
 
-Und was kann ich mir morgens bei den Hühnern abholen? 
-Auswahl Ei: Ja genau, morgens gibt es immer frischgelegte Eier. 
-Auswahl Mehl: Das ist so nicht richtig. 
-Mehrmals falsch: Mehl kann ich aus Getreide gewinnen, von den Hühnern bekomme ich Eier.
+$welches Tier macht denn dieses GerÃ¤usch?
+Richtig! Super! Weiter geht's.
+Das war es glaube ich nicht. hÃ¶re nochmal genauer hin.
+Ich errinnere mich. Das Huhn macht solche GerÃ¤usche.
 
-Und was kann ich mir zum Frühstück leckeres mit Eiern braten?
-Auswahl Spiegelei: Ja genau, besonders lecker finde ich es mit Speck. 
-Auswahl XXXXXXXXX: Hm leider nicht, versuche es nochmal.
-Mehrmals falsch: Ich glaube Spiegelei ist hier gemeint.
+$Und was kann ich mir morgens bei den HÃ¼hnern abholen?
+Richtig, morgens gibt es immer frischgelegte Eier.
+Das war es glaube ich nicht. Bei den HÃ¼hnern kann ich etwas anderes abholen.
+Ich errinnere mich. Mehl kann ich aus Getreide gewinnen, von den HÃ¼hnern bekomme ich Eier.
 
-Klasse, wieder eine tolle Runde. Willst du noch eine letzte Runde spielen? 
-Auswahl Ja: Klasse, dann geht es jetzt weiter!
-Auswahl Nein: Schade, dann bis zum nächsten Mal!
+$Und was kann ich mir zum FrÃ¼hstÃ¼ck leckeres mit Eiern braten?
+Richtig, besonders lecker finde ich es mit Speck.
+Das war es glaube ich nicht., versuche es nochmal.
+Ich errinnere mich. Ich glaube Spiegelei ist hier gemeint.
 
-An welches Tier erinnert dich dieses Geräusch? - (MÄÄÄÄHHHHH!)
-Auswahl Schaf: Ja genau, es ist das Schaf!
-Auswahl Schnecke: Ich habe noch nie eine Schnecke soetwas machen gehört. 
-Mehrmals falsch: Hm, ich weiß gar nicht was die Schnecke für Geräusche macht. Es war wohl eher das Schaf.
+Klasse, wieder eine tolle Runde. Willst du noch eine letzte Runde spielen?
+Klasse, dann geht es jetzt weiter!
+Schade, dann bis zum nÃ¤chsten Mal!
 
-Hm, und wovon hat das Schaf im Sommer viel zu viel?
-Auswahl Wolle: Ja genau, es muss geschoren werden, weil dem Schaf sonst im Sommer zu warm ist. 
-Auswahl XXXXX: Ne, also das kann ich mir nicht vorstellen. Nochmal!
-Mehrmals falsch: Das Schaf hat ganz kuschelige, warme Wolle. 
+$An welches Tier erinnert dich dieses GerÃ¤usch?
+Richtig, genau, es ist das Schaf!
+Das war es glaube ich nicht. Versuche ein nochmal!
+Ich errinnere mich. Es war wohl eher das Schaf.
 
-Und was kann ich mit der ganzen Wolle machen, damit ich im Winter nicht friere?
-Auswahl Socken: Ja genau, meine Oma hat mir immer Wollsocken gestrickt. 
-Auswahl XXXXXX: Das geht doch nicht, probier es noch einmal.
-Mehrmals falsch: Nein, die dicken Socken sind aus der weichen Wolle gestrickt.
+$und wovon hat das Schaf im Sommer viel zu viel?
+Richtig, es muss geschoren werden, weil dem Schaf sonst im Sommer zu warm ist.
+Das war es glaube ich nicht, also das kann ich mir nicht vorstellen. Nochmal!
+Ich errinnere mich. Das Schaf hat ganz kuschelige, warme Wolle.
 
-Klasse, nun ist wieder alles richtig. Danke für deine tolle Unterstützung! 
+$Und was kann ich mit der ganzen Wolle machen, damit ich im Winter nicht friere?
+Richtig, meine Oma hat mir immer MÃ¼tzen gestrickt.
+Das war es glaube ich nicht, probier es noch einmal.
+Ich errinnere mich, die dicke MÃ¼tze sind aus der weichen Wolle gestrickt.
+
+Klasse, nun ist wieder alles richtig. Danke fÃ¼r deine tolle UnterstÃ¼tzung!
