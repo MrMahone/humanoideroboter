@@ -47,6 +47,7 @@
         <File name="lautsprecher" src="html/de/img/lautsprecher.jpg" />
         <File name="Error" src="html/de/img/Error.jpg" />
         <File name="Back" src="html/de/img/Back.svg" />
+        <File name="Dialogs v1" src="html/Dialogs v1.txt" />
     </Resources>
     <Topics />
     <IgnoredPaths />

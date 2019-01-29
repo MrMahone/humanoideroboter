@@ -49,7 +49,7 @@ function logthis(message){
 function sendData(buttonID){
 	// get the correct Dialogs to send it to choregraphe
 	if (dialogs == null){
-		getDialogs('../Dialogs.txt');
+		getDialogs('./Dialogs.txt');
 	}
 	var out = [];
 	if(buttonID.length === 2){

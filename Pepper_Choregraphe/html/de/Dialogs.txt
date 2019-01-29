@@ -1,0 +1,74 @@
+﻿Dialoge für Themenwelt Bauernhof:
+Format (ausgenommen Intro):
+
+ $Einstieg
+ Richtiges Bild
+ Falsches Bild
+ mehrmals falsch
+
+(opt) Frage nächste Runde
+(opt) Einstieg nächste Runde
+(opt) Abbruch Spiel
+
+Leere Zeilen werden ignoriert.
+
+
+Dialoge:
+$Am Wochenende war ich auf dem Bauernhof und habe einiges gesehen.
+Doch einiges habe ich schon wieder vergessen. Kannst du mir helfen? 
+
+$Von welchem Tier stammt dieses Geräusch?
+Richtig, das habe ich schon einmal gehört.
+Das war es glaube ich nicht, versuche es noch einmal!
+Ich erinnere mich, es ist die Kuh.
+
+$Was gibt denn die Kuh, was man trinken kann?
+Richtig, Milch kann man trinken.
+Das war es glaube ich nicht, das Brot kann man nicht trinken.
+Ich erinnere mich wieder! Es war die Milch.
+
+$In anderen Lebensmitteln ist auch Milch. Weißt du, ob sie in Wurst oder Käse drin ist?
+Richtig, das war sehr gut!
+Das war es glaube ich nicht. Wurst kann man nicht aus Milch machen. Versuche es nochmal.
+Ich erinnere mich, Käse wird aus Milch gemacht.
+
+Das hat Spass gemacht. Möchtest du noch eine Runde mit mir spielen?
+Toll, weiter geht's in die nächste Runde!
+Schade, dann bis zum nächsten Mal!
+
+
+$welches Tier macht denn dieses Geräusch?
+Richtig! Weiter geht's.
+Das war es glaube ich nicht. Höre nochmal genauer hin.
+Ich errinnere mich. Das Huhn macht solche Geräusche.
+
+$Und was findet man im Nest der Hühner?
+Richtig, frischgelegte Eier.
+Das war es glaube ich nicht. Bei den Hühnern findet man etwas anderes im Nest.
+Ich erinnere mich. Das Huhn legt in seinem Nest Eier.
+
+$Und was kannst du dir Leckeres mit den Eiern braten?
+Richtig, besonders lecker finde ich es mit Speck.
+Das war es glaube ich nicht. Versuche es nochmal.
+Ich erinnere mich. Ich glaube das Spiegelei ist hier gemeint.
+
+Klasse, wieder eine tolle Runde. Willst du noch eine letzte Runde spielen?
+Klasse, dann geht es jetzt weiter!
+Schade, dann bis zum nächsten Mal!
+
+$An welches Tier erinnert dich dieses Geräusch?
+Richtig, genau, es ist das Schaf!
+Das war es glaube ich nicht. Versuche es noch einmal!
+Ich erinnere mich. Es war wohl eher das Schaf.
+
+$und was bekommt man aus dem Fell vom Schaf?
+Richtig! Du bist aber schlau!
+Das war es glaube ich nicht, versuch es nochmal!
+Ich erinnere mich. Das Schaf hat ganz kuschelige, warme Wolle.
+
+$Und was kannst du mit der Wolle machen, damit dir nicht kalt wird?
+Richtig, du könntest eine Mütze stricken!
+Das war es glaube ich nicht, probier es noch einmal.
+Ich erinnere mich, die dicke Mütze ist aus der weichen Wolle gestrickt.
+
+Klasse, nun kann ich mich wieder an alles erinnern. Danke für deine tolle Unterstützung!
